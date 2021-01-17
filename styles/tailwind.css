@@ -1,0 +1,41 @@
+
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+html,
+body {
+  @apply bg-gray-50 dark:bg-gray-900;
+}
+
+/* Write your own custom component styles here */
+.btn-blue {
+  @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
+.social {
+  margin:15px;
+  padding: 1px;
+  float:left;
+  -webkit-transition: margin 0.5s ease-out;
+  -moz-transition: margin 0.5s ease-out;
+  -o-transition: margin 0.5s ease-out;
+  height: 35px;
+  width: 35px;
+  overflow: hidden;
+}
+
+.social:hover {
+cursor:pointer;
+  margin-top: 5px;
+}

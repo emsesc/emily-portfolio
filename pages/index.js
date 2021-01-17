@@ -8,5 +8,6 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
     </Layout>
+
   )
 }
