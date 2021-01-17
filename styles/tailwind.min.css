@@ -9,6 +9,11 @@ Document
 Use a better box model (opinionated).
 */
 
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *,
 *::before,
 *::after {
