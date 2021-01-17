@@ -4,7 +4,7 @@ import Link from 'next/link'
 const name = 'Emily Chen'
 export const siteTitle = 'Emily Chen'
 
-export default function Layout() {
+export default function Nav() {
   return (
     <div>
       <Head>

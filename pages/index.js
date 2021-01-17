@@ -9,6 +9,7 @@ export default function Home({ allPostsData }) {
       <Nav />
       <Head>
         <title>{siteTitle}</title>
+        <link rel="icon" href="/favicon.io" />
       </Head>
       <section className="py-12 px-4">
         <div className="flex flex-wrap items-center text-center lg:text-left -mx-2">
@@ -26,7 +27,7 @@ export default function Home({ allPostsData }) {
               <p className="mb-8 text-gray-400 leading-relaxed">High School student interested in Cybersecurity and Web Dev. Currently a <b>Developer Advocate</b> @ <a className="text-blue-300 hover:underline" href="https://www.bitproject.org/" target="_blank">BitProject</a>.</p>
               <p className="mb-8 text-gray-400 leading-relaxed"> Makes banana bread and explores the unknown in her free time. 🌎</p>
               <div>
-                <a className="inline-block py-4 px-8 mr-6 leading-none text-white bg-blue-300 hover:bg-blue-400 font-semibold rounded shadow" href="#">Resume ⬇</a></div>
+                <a className="inline-block py-4 px-8 mr-6 leading-none text-white bg-blue-300 hover:bg-blue-400 font-semibold rounded shadow" href="/resume.pdf" target="_blank">Resume ⬇</a></div>
               </div>
               <div className="lg:w-1/2 px-2">
                 <img src="images/circleprofile.png" alt=""></img>

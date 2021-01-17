@@ -9,6 +9,7 @@ export default function Home({ allPostsData }) {
         <Nav />
         <Head>
           <title>{siteTitle}</title>
+          <link rel="icon" href="/favicon.io" />
         </Head>
         <section class="py-12 px-4 text-center"><div class="w-full max-w-2xl mx-auto">
           <h2 class="mt-2 mb-6 leading-tight font-semibold font-heading text-4xl text-white">Completed and Ongoing Projects</h2>
