@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Nav, { siteTitle } from '../components/nav'
 import Footer from '../components/footer'
+import Link from 'next/link'
 
 export default function Home({ allPostsData }) {
   return (
@@ -38,7 +39,9 @@ export default function Home({ allPostsData }) {
           <div class="flex flex-col h-full p-8 bg-gray-100 rounded">
             <h2 class="text-3xl font-semibold font-heading text-gray-800">Projects</h2>
             <p class="max-w-sm mt-auto mb-8 text-gray-400 leading-relaxed">Bunnimage, AYA Survivorship, Serverless Boot Camp, and FormSpawner</p>
-            <a class="text-right text-blue-500 hover:underline" href="#">View all Projects</a>
+            <Link href="/projects">
+              <a class="text-right text-blue-500 hover:underline">View all Projects</a>
+            </Link>
           </div>
         </div>
         <div class="lg:w-1/2 px-4">

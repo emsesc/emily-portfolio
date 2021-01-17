@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Nav, { siteTitle } from '../components/nav'
 import Footer from '../components/footer'
+import Link from 'next/link'
 
 export default function Home({ allPostsData }) {
     return (
@@ -12,7 +13,9 @@ export default function Home({ allPostsData }) {
         <section class="py-12 px-4 text-center">
         <div class="w-full max-w-2xl mx-auto">
           <h2 class="text-5xl mb-6 leading-tight font-semibold font-heading text-white">Blogs</h2>
-          <a class="text-blue-300 hover:underline" href="#">&lt;&lt; Go home</a>
+          <Link href="/">
+            <a class="hover:underline text-blue-300" href="#">&lt;&lt; Go home</a>
+          </Link>        
         </div>
       </section>
     
