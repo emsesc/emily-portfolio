@@ -1,31 +1,48 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/nav'
+import Nav, { siteTitle } from '../components/nav'
+import Footer from '../components/footer'
 
 export default function Home({ allPostsData }) {
-  return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <section class="py-12 px-4"><div class="flex flex-wrap items-center text-center lg:text-left -mx-2">
-        <div class="lg:w-1/2 px-2 lg:pr-10 mt-10 lg:mt-0 order-1 lg:order-none">
-          <h2 class="text-5xl leading-tight font-semibold font-heading">Emily Chen</h2>
-          <a href="https://twitter.com/emsesc" class="social" target="_blank">
-            <img src="images/twitter-xxl.png"></img>
-          </a>
-          <a href="https://github.com/emsesc" class="social" target="_blank">
-            <img src="images/github-9-xxl.png"></img>
-          </a>
-          <a href="https://www.linkedin.com/in/emilyschen/" class="social" target="_blank">
-            <img src="images/linkedin-3-xxl.png"></img>
-          </a><br/><br/><br/>
-          <p class="mb-8 text-gray-400 leading-relaxed">High School student interested in Cybersecurity and Web Dev. Currently a <b>Developer Advocate</b> @ <a class="text-blue-300 hover:underline" href="https://www.bitproject.org/" target="_blank">BitProject</a>.</p>
-          <p class="mb-8 text-gray-400 leading-relaxed"> Makes banana bread and explores the unknown in her free time. 🌎</p>
-          <div><a class="inline-block py-4 px-8 mr-6 leading-none text-white bg-blue-300 hover:bg-blue-400 font-semibold rounded shadow" href="#">Resume ⬇</a></div>
-        </div>
-        <div class="lg:w-1/2 px-2"><img src="images/circleprofile.png" alt=""></img></div>
+    return (
+      <div>
+        <Nav />
+        <Head>
+          <title>{siteTitle}</title>
+        </Head>
+        <section class="py-12 px-4 text-center">
+        <div class="w-full max-w-2xl mx-auto">
+          <h2 class="text-5xl mb-6 leading-tight font-semibold font-heading text-white">Blogs</h2>
+          <a class="text-blue-300 hover:underline" href="#">&lt;&lt; Go home</a>
         </div>
       </section>
-    </Layout>
-  )
-}
+    
+      <div class="flex flex-wrap -mx-4 -mb-4 md:mb-0">
+        <div class="w-full md:w-1/2 px-4 mb-4 md:mb-0">
+      <img src="images/Blue_and_Yellow_Technology_Blog_Banner_(1).png" alt="" class="rounded shadow flex-col p-8"></img>
+      </div>
+        <div class="w-full md:w-1/2 px-4 mb-4 md:mb-0">
+      <img src="images/Blue_and_Yellow_Technology_Blog_Banner_(3).png" alt="" class="rounded shadow flex-col p-8"></img>
+      </div>
+      </div>
+    
+      <section class="py-12 px-4"><div class="flex flex-wrap -mx-4">
+        <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+          <div class="flex flex-col h-full p-8 bg-gray-100 rounded">
+            <h2 class="text-3xl font-semibold font-heading text-gray-800">Creating a File Sharing and Conversion Web App with Azure Functions</h2><br/>
+            <p class="max-w-sm mt-auto mb-8 text-gray-400 leading-relaxed">Detailed step-by-step walkthrough of how to replicate Bunnimage.</p>
+            <a class="text-right text-blue-500 hover:underline" href="#">Read now ➡</a>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+          <div class="flex flex-col h-full p-8 bg-gray-100 rounded">
+            <h2 class="text-3xl font-semibold font-heading text-gray-800">Student to Mentor</h2>
+            <p class="max-w-sm mt-auto mb-8 text-gray-400 leading-relaxed">My experience from going from participating in the Fall 2020 Serverless BitCamp to mentoring the next iteration.</p>
+            <a class="text-right text-blue-500 hover:underline" href="#">Read now ➡</a>
+          </div>
+        </div>
+        </div>
+      </section>
+        <Footer />
+      </div>
+    )
+  }
