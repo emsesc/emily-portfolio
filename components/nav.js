@@ -21,11 +21,9 @@ export default function Layout({ children, home }) {
             <svg class="fill-current h-3 w-3" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></button>
         </div>
         <div class="navbar-menu hidden lg:flex lg:flex-grow lg:items-center w-full lg:w-auto">
-          <div class="ml-auto"><a class="block lg:inline-block mt-4 lg:mt-0 lg:mr-8 hover:text-indigo-600 text-blue-200" href="#">Blog</a><a class="inline-block py-3 px-6 mt-4 lg:mt-0 leading-none text-white font-semibold rounded shadow bg-blue-300 hover:bg-blue-400" href="#">Projects</a></div>
+          <div class="ml-auto"><a class="block lg:inline-block mt-4 lg:mt-0 lg:mr-8 hover:text-blue-400 text-blue-200" href="#">Blog</a><a class="inline-block py-3 px-6 mt-4 lg:mt-0 leading-none text-white font-semibold rounded shadow bg-blue-300 hover:bg-blue-400" href="#">Projects</a></div>
         </div>
       </nav>
     </div>
-    
-    
   )
 }
